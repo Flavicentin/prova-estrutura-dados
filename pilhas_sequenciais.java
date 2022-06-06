@@ -20,6 +20,24 @@ public class pilhas_sequenciais{
     int topo;
     int dados[] = new int[NUMERO_MAXIMO_ELEMENTO_PILHA];
 
+    public void init(){
+        topo = 0;
+    }
+
+    public boolean isEmpty() {
+		if (topo == 0) 
+			return true;
+		else 
+			return false;
+	}
+
+    public boolean isFull() {
+		if (topo == NUMERO_MAXIMO_ELEMENTO_PILHA)
+			return true;
+		else 
+			return false;
+	}
+
     public void push(int elem){
         dados[topo] = elem;
         topo++;
@@ -31,7 +49,6 @@ public class pilhas_sequenciais{
     }
 
     public int top(){
-        return dados[topo - 1];
+        return dados[topo];
     }
-    
 }
