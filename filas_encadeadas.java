@@ -12,7 +12,7 @@
 //     -dequeue (retira o primeiro da fila)
 //     -first (le o inicio da fila)
 
-
+//definição no de fila
 public class filas_encadeadas{
     public static class NO{
         public int dado;
